@@ -73,7 +73,23 @@
         navText: [
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
-        ]
+        ],
+        responsive: {
+            // breakpoint from 0 up
+            0: {
+                items: 1,
+            },
+            // breakpoint from 480 up
+            768: {
+                items: 1,
+            },
+            1024: {
+                items: 2,
+            },
+            1200: {
+                items: 3,
+            }
+        }
     });
 
 })(jQuery);

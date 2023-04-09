@@ -45,10 +45,10 @@ function browsersyncReload(cb) {
 // Watch Task
 function watchTask() {
   watch("pages/**/*.html", series(runTask, browsersyncReload));
-  watch(
-    ["css/scss/**/*.scss", "js/*.js"],
-    series(scssTask, browsersyncReload)
-  );
+  // watch(
+  //   ["css/scss/**/*.scss", "js/*.js"],
+  //   series(scssTask, browsersyncReload)
+  // );
 }
 
 exports.default = series(runTask, browsersyncServe, watchTask);
