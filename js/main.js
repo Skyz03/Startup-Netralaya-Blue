@@ -75,11 +75,9 @@
             '<i class="bi bi-chevron-right"></i>'
         ],
         responsive: {
-            // breakpoint from 0 up
             0: {
                 items: 1,
             },
-            // breakpoint from 480 up
             768: {
                 items: 1,
             },
