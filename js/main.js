@@ -113,5 +113,24 @@
         }
     });
 
+
+    // NavLink finder 
+    // Get the current URL
+    const currentUrl = window.location.href;
+
+    // Get all the navigation links
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Loop through each navigation link and check if its href matches the current URL
+    navLinks.forEach(link => {
+        if (link.href === currentUrl) {
+            // If the href matches the current URL, add the active class to the link
+            link.classList.add('active');
+        } else {
+            // Otherwise, remove the active class from the link
+            link.classList.remove('active');
+        }
+    });
+
 })(jQuery);
 
