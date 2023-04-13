@@ -437,6 +437,13 @@
   background: var(--secondary);
 }
 
+@media (min-width: 768px) {
+  .highlight-doc {
+    height: 375px;
+    object-fit: cover;
+  }
+}
+
 /*** Footer ***/
 .footer {
   color: #a7a8b4;
